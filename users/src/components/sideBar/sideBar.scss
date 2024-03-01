@@ -1,0 +1,12 @@
+@import "../../style.scss";
+
+.sidebar {
+  @include themify($themes) {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    background-color: themed("bg");
+    position: relative;
+    border-right: 1px solid themed("border");
+  }
+}

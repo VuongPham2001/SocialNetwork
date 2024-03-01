@@ -1,0 +1,83 @@
+@import "../../style.scss";
+
+.input {
+  @include themify($themes) {
+    height: 50px;
+    background-color: themed("bg");
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    .preview {
+      display: flex;
+      margin-bottom: 270px;
+      img,
+      video {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0px;
+      }
+    }
+
+    .inputWrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      input {
+        width: 100%;
+        /* Điều chỉnh chiều rộng để để chừa không gian cho biểu tượng */
+        height: 40px;
+        border: none;
+        outline: none;
+        background-color: themed("bgSoft");
+        color: themed("textColor");
+        font-size: 15px;
+        border-radius: 50px;
+        text-align: left;
+        padding-left: 10px;
+
+        &::placeholder {
+          color: themed("textColor");
+        }
+      }
+
+      .emojiWrapper {
+        position: absolute;
+        right: 10px;
+      }
+
+      .emojiIcon {
+        color: themed("textColor");
+        display: flex;
+        cursor: pointer;
+      }
+
+      .emote-picker {
+        position: absolute;
+        bottom: calc(100% + 5px);
+        left: -290px;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .send {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: themed("textColor");
+      cursor: pointer;
+    }
+  }
+}

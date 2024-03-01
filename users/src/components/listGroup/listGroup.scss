@@ -1,0 +1,60 @@
+@import "../../style.scss";
+
+.listGroup {
+  @include themify($themes) {
+    flex: 1;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: themed("bgSoft");
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: themed("textColorSoft");
+      border-radius: 6px;
+    }
+    .addGroup {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        margin-right: 10px;
+      }
+    }
+    .groupChat {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: themed("textColor");
+      border-radius: 20px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: themed("bgSoft");
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .groupChatInfo {
+        span {
+          font-size: 17px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 13px;
+          color: themed("textColor");
+        }
+      }
+    }
+  }
+}

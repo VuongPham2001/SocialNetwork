@@ -1,0 +1,95 @@
+@import "../../style.scss";
+
+.search {
+  @include themify($themes) {
+    border-bottom: 2px solid themed("border");
+    flex: 1;
+
+    .searchForm {
+      padding: 10px;
+
+      .inputWrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .iconWrapper {
+          display: flex;
+          position: absolute;
+          color: themed("textColor");
+          left: 10px;
+        }
+
+        .customInput {
+          width: 100%;
+          height: 40px;
+          background-color: themed("bgSoft");
+          border: none;
+          color: themed("textColor");
+          outline: none;
+          font-size: 15px;
+          border-radius: 50px;
+          padding-left: 40px; /* Đảm bảo giữ khoảng trống cho biểu tượng */
+          box-sizing: border-box;
+
+          &::placeholder {
+            color: themed("textColor");
+          }
+        }
+      }
+    }
+
+    .userChat {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: themed("textColor");
+      border-radius: 20px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: themed("bgSoft");
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .userChatInfo {
+        span {
+          font-size: 17px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 13px;
+          color: themed("textColor");
+        }
+      }
+    }
+
+    .box {
+      font-size: 17px;
+      padding: 15px;
+      cursor: pointer;
+      display: inline-block;
+
+      span {
+        display: inline-block;
+        margin-right: 15px;
+        padding: 8px;
+        border-radius: 20px;
+        color: themed("textColor");
+
+        &.selected {
+          background-color: themed("bgSpan");
+          color: themed("textSpan");
+        }
+      }
+    }
+  }
+}
