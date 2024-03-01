@@ -1,4 +1,4 @@
-# Đồ án tối nghiệp 2024 - HAU - Mạng xã hội doanh nghiệp
+# Đồ án tối nghiệp 2024 - HAU - Mạng xã hội doanh nghiệp MISSSA
 
 ## Chức năng chung:
 
