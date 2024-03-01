@@ -7,7 +7,7 @@
 * Chỉnh sửa hồ sơ và đổi mật khẩu
 * Tìm kiếm người dùng, Nhắn tin theo thời gian thực
 * Tạo, Xóa nhóm
-* Thêm, Xóa người dùng
+* Thêm, Xóa người dùng và quản lý thành viên nhóm
 
 ## Chức năng riêng biệt:
 
