@@ -1,8 +1,24 @@
+# Đồ án tối nghiệp 2024 - HAU - Mạng xã hội doanh nghiệp
+
+## Chức năng chung:
+
+* Đăng nhập, Đăng xuất
+* Đăng bài và xóa bài của mình
+* Chỉnh sửa hồ sơ và đổi mật khẩu
+* Tìm kiếm người dùng, Nhắn tin theo thời gian thực
+* Tạo, Xóa nhóm
+* Thêm, Xóa người dùng
+
+## Chức năng riêng biệt:
+
+* Tạo tài khoản, Quản lý quyền hạn người dùng, Xóa người dùng
+* Duyệt tất cả bài đăng
+
+Admin: test@missa.com pass: 1234567
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Admin: test@missa.com pass: 1234567
 
 ## Available Scripts
 
